@@ -82,12 +82,12 @@
 }
 
 .roi-calculator-wrapper input[type="text"] {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   font-size: 1em;
   border: 2px solid #E1DFD9;
   border-radius: 5px;
-  text-align: center;
+  text-align: right;
   margin-top: 5px;
   font-family: 'Work Sans', sans-serif;
 }
