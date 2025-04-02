@@ -101,6 +101,8 @@
 
 /* Value Display */
 .roi-calculator-wrapper .value {
+  display: inline-block;
+  min-width: 50px;
   font-size: 18px;
   color: #155C4F;
 }
