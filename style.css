@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Work Sans', sans-serif !important;
+    background-color: #E1DFD9; /* Light background matching your sub-menu color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #FFFFFF; /* White background for the calculator */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*width: 100%;*/
+    max-width: 1000px;
+    box-sizing: border-box;
+    border: 2px solid #155C4F; /* Border with your main color */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds spacing between elements */
+}
+
+/* Title and Header */
+h2 {
+    color: #155C4F; /* Main color for headings */
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #155C4F;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Sliders and Labels */
+label {
+    font-size: 16px;
+    color: #155C4F; /* Main color for text labels */
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="range"]:focus {
+    background-color: #ccc;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    background-color: #ddd;
+}
+
+input[type="range"]::-moz-range-track {
+    height: 8px;
+    background-color: #ddd;
+}
+
+input[type="range"]::-ms-track {
+    height: 8px;
+    background-color: #ddd;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #155C4F;
+    border-radius: 5px;
+    text-align: right;
+    margin-top: 5px;
+}
+
+
+/* Value Display */
+.value {
+    font-size: 18px;
+    color: #155C4F; /* Matching the primary color for value display */
+}
+
+/* New Slider Styling for Project Cost & Incentives */
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.slider-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #155C4F;
+    text-align: right;
+}
+
+/* Results Section */
+p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+p span {
+    font-weight: bold;
+    color: #155C4F; /* Use your main color to highlight the results */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
