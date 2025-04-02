@@ -1,39 +1,43 @@
 <link rel="stylesheet" href="https://jamesevx.github.io/evchargerroi/styles.css">
 
-<div class="container">
-  <h2>EV Charging ROI Calculator</h2>
 
-  <label>Number of Charger Ports: <span class="value" id="numPortsVal">6</span></label>
-  <input type="range" id="numPorts" min="1" max="20" value="6" oninput="updateCalculation()">
+<div class="roi-calculator-wrapper">
+  <div class="container">
+    <h2>EV Charging ROI Calculator</h2>
 
-  <label>Charger Port kW Rating: <span class="value" id="kwRatingVal">175</span> kW</label>
-  <input type="range" id="kwRating" min="10" max="700" step="5" value="175" oninput="updateCalculation()">
+    <label>Number of Charger Ports: <span class="value" id="numPortsVal">6</span></label>
+    <input type="range" id="numPorts" min="1" max="20" value="6" oninput="updateCalculation()">
 
-  <label>Cost per kWh ($): <span class="value" id="costPerKwhVal">0.24</span></label>
-  <input type="range" id="costPerKwh" min="0.05" max="0.80" step="0.01" value="0.24" oninput="updateCalculation()">
+    <label>Charger Port kW Rating: <span class="value" id="kwRatingVal">175</span> kW</label>
+    <input type="range" id="kwRating" min="10" max="700" step="5" value="175" oninput="updateCalculation()">
 
-  <label>Customer Charge Rate per kWh ($): <span class="value" id="chargeRateVal">0.40</span></label>
-  <input type="range" id="chargeRate" min="0.10" max="1.00" step="0.01" value="0.40" oninput="updateCalculation()">
+    <label>Cost per kWh ($): <span class="value" id="costPerKwhVal">0.24</span></label>
+    <input type="range" id="costPerKwh" min="0.05" max="0.80" step="0.01" value="0.24" oninput="updateCalculation()">
 
-  <label>Hours Used per Day: <span class="value" id="hoursPerDayVal">2</span> hrs</label>
-  <input type="range" id="hoursPerDay" min="1" max="24" value="2" oninput="updateCalculation()">
+    <label>Customer Charge Rate per kWh ($): <span class="value" id="chargeRateVal">0.40</span></label>
+    <input type="range" id="chargeRate" min="0.10" max="1.00" step="0.01" value="0.40" oninput="updateCalculation()">
 
-  <label>Days Used per Year: <span class="value" id="daysPerYearVal">365</span> days</label>
-  <input type="range" id="daysPerYear" min="100" max="365" value="365" oninput="updateCalculation()">
+    <label>Hours Used per Day: <span class="value" id="hoursPerDayVal">2</span> hrs</label>
+    <input type="range" id="hoursPerDay" min="1" max="24" value="2" oninput="updateCalculation()">
 
-  <label for="projectCost">Project Cost ($):</label>
-  <input type="text" id="projectCost" value="0" oninput="formatAndCalculate('projectCost')">
+    <label>Days Used per Year: <span class="value" id="daysPerYearVal">365</span> days</label>
+    <input type="range" id="daysPerYear" min="100" max="365" value="365" oninput="updateCalculation()">
 
-  <label for="incentives">Estimated Incentive Voucher ($):</label>
-  <input type="text" id="incentives" value="0" oninput="formatAndCalculate('incentives')">
+    <label for="projectCost">Project Cost ($):</label>
+    <input type="text" id="projectCost" value="0" oninput="formatAndCalculate('projectCost')">
 
-  <h3>Results</h3>
-  <p>Total Energy Consumed per Year: <span id="totalKwh">-</span> kWh</p>
-  <p>Total Electricity Cost: <span id="totalCost">-</span></p>
-  <p>Total Revenue: <span id="totalRevenue">-</span></p>
-  <p>Net Profit per Year: <span id="netProfit">-</span></p>
-  <p>Net Project Cost: <span id="netProjectCost">-</span></p>
-  <p>Estimated Payback Period: <span id="paybackPeriod">-</span> months</p>
+    <label for="incentives">Estimated Incentive Voucher ($):</label>
+    <input type="text" id="incentives" value="0" oninput="formatAndCalculate('incentives')">
+
+    <h3>Results</h3>
+    <p>Total Energy Consumed per Year: <span id="totalKwh">-</span> kWh</p>
+    <p>Total Electricity Cost: <span id="totalCost">-</span></p>
+    <p>Total Revenue: <span id="totalRevenue">-</span></p>
+    <p>Net Profit per Year: <span id="netProfit">-</span></p>
+    <p>Net Project Cost: <span id="netProjectCost">-</span></p>
+    <p>Estimated Payback Period: <span id="paybackPeriod">-</span> months</p>
+  </div>
 </div>
+
 
 <script src="https://jamesevx.github.io/evchargerroi/script.js"></script>
