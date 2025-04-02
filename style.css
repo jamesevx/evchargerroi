@@ -29,6 +29,7 @@
 
 /* Headings */
 .roi-calculator-wrapper h2 {
+  font-family: 'Work Sans', sans-serif !important;
   color: #155C4F;
   font-size: 2em;
   margin-bottom: 20px;
@@ -36,6 +37,7 @@
 }
 
 .roi-calculator-wrapper h3 {
+  font-family: 'Work Sans', sans-serif !important;
   color: #155C4F;
   font-size: 24px;
   margin-top: 30px;
