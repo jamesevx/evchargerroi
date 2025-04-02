@@ -82,7 +82,7 @@
 }
 
 .roi-calculator-wrapper input[type="text"] {
-  width: 90%;
+  width: 95%;
   padding: 10px;
   font-size: 1em;
   border: 2px solid #E1DFD9;
@@ -91,6 +91,13 @@
   margin-top: 5px;
   font-family: 'Work Sans', sans-serif;
 }
+
+.roi-calculator-wrapper input:focus, {
+    outline: none;
+    border-color: #155C4F;
+    box-shadow: 0 0 5px rgba(21, 92, 79, 0.5);
+}
+
 
 /* Value Display */
 .roi-calculator-wrapper .value {
